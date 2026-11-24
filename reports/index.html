@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education Insights | Synthetic Data</title><style>
+:root{--ink:#17233c;--light:#eff4fa;--primary:#2463eb}
+*{box-sizing:border-box}body{margin:0;background:#f5f7fb;color:var(--ink);font:16px system-ui,sans-serif}
+header{background:#142447;color:white;padding:52px max(20px,calc((100vw - 1050px)/2))}
+header p{color:#b6c8e3;max-width:60ch} main{max-width:1050px;margin:auto;padding:25px 20px 70px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px;margin-top:-52px}
+.card,.panel{background:white;border-radius:16px;padding:22px;box-shadow:0 6px 22px #14244712}
+.value{font-size:32px;font-weight:800;margin:6px 0} .hint{font-size:13px;color:#54657e}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:18px;margin:25px 0}
+img{width:100%;height:auto}table{width:100%;border-collapse:collapse}th,td{padding:12px;border-bottom:1px solid #e8edf5;text-align:left}th{background:#edf3ff}
+footer{color:#52617c;font-size:13px;padding-top:25px}@media(max-width:500px){.charts{grid-template-columns:1fr}}
+</style></head><body>
+<header><h1>Education Insights</h1><p>Open, reproducible analysis of <strong>fictional student records</strong>. Not a real institution's data.</p></header>
+<main><div class="cards">
+<div class="card"><div>Records</div><div class="value">360</div><div class="hint">Synthetic examples</div></div>
+<div class="card"><div>Courses</div><div class="value">6</div><div class="hint">Distinct course names</div></div>
+<div class="card"><div>Mean score</div><div class="value">69.6</div><div class="hint">Out of 100</div></div>
+<div class="card"><div>Pass rate</div><div class="value">75.6%</div><div class="hint">Threshold: 60</div></div>
+</div><div class="charts">
+<div class="panel"><img src="course_scores.png" alt="Average score by course"></div>
+<div class="panel"><img src="score_distribution.png" alt="Distribution of final scores"></div>
+<div class="panel"><img src="attendance_vs_score.png" alt="Attendance score scatter plot"></div>
+<div class="panel"><img src="cohort_pass_rates.png" alt="Pass rates by cohort"></div>
+</div><div class="panel"><h2>Course summary</h2><div style="overflow-x:auto"><table><thead><tr><th>Course</th><th>Records</th><th>Mean score</th><th>Pass rate</th></tr></thead><tbody><tr><td>Statistics</td><td>55</td><td>70.8</td><td>78.2%</td></tr><tr><td>Programming</td><td>48</td><td>70.8</td><td>77.1%</td></tr><tr><td>Web Development</td><td>71</td><td>70.7</td><td>81.7%</td></tr><tr><td>Databases</td><td>61</td><td>69.3</td><td>72.1%</td></tr><tr><td>Networks</td><td>64</td><td>68.6</td><td>71.9%</td></tr><tr><td>Algorithms</td><td>61</td><td>67.6</td><td>72.1%</td></tr></tbody></table></div></div>
+<footer>Generated with Python, pandas and matplotlib · Data is synthetic · Observed relationships do not establish causality.</footer></main></body></html>
