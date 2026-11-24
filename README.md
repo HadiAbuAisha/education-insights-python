@@ -1,4 +1,4 @@
-<p align="center"><img src="docs/assets/hero.png" alt="Education Insights project cover" width="100%"></p>
+<p align="center"><img src="docs/assets/cover.svg" alt="Distinct teal Education Insights illustration" width="100%"></p>
 <p align="center"><strong>Reproducible learning analytics</strong></p>
 <p align="center"><code>Python · pandas · matplotlib</code></p>
 
